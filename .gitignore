@@ -1,6 +1,6 @@
-# Build dependencies
-tools/node_modules/
+# Dépendances de construction
+outils/node_modules/
 
-# OS / editor noise
+# Fichiers système / éditeur
 .DS_Store
 *.swp
