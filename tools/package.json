@@ -1,0 +1,30 @@
+{
+  "name": "medx-design-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build scripts that render the MedX diagrams, the design report (HTML/PDF) and the presentation (PPTX).",
+  "scripts": {
+    "check": "node check-docs.js",
+    "diagrams": "node render-diagrams.js",
+    "report": "node build-report.js",
+    "slides": "node build-slides.js",
+    "all": "npm run diagrams && npm run check && npm run report && npm run slides"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible-mono": "^5.3.0",
+    "@fontsource/atkinson-hyperlegible-next": "^5.3.0",
+    "@fontsource/bricolage-grotesque": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "marked": "^18.0.14",
+    "mermaid": "^12.0.0",
+    "playwright-core": "^1.56.1",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-icons": "^5.7.0",
+    "sharp": "^0.35.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
